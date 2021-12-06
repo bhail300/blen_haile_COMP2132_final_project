@@ -5,21 +5,47 @@
         <link href="styles/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <main id="main-container">
-            <div><header>COMP 2132 Final Project</header></div>
+        <main> 
+            <header>
+                COMP 2132 Final Project
+            </header>
 
-            <article id="game-container">
-                <h1>Classic Dice</h1>
+            <article>
+
+                <section id="title-box">
+                    <h2>Dice Game</h2>
+                    <div><button id="rule-btn">Show rules</button></div>
+                </section>
+
+                <section id="game-box">
+                    
+                    <div id="left" class="column">
+                         <p>You</p>
+                    </div>
+
+                    <div id="right" class="column"> 
+                        <p>Opponent</p>
+                    </div>
+                </section>
                 
-                <section>
+                <section id="score-box">
+                    <div id="score1" class="position">
+                        <p>Your current score:</p>
+                        <p>Your total score:</p>
+                    </div>
 
+                    <div id="score2" class="position">
+                        <p>Opponents current score:</p>
+                        <p>Opponents total score:</p>
+                    </div>
                 </section>
 
-                <section >
-
+                <section id="game-btn">
+                    <div>
+                        <button id="new-btn" class="btn-style">New Game</button>
+                        <button id="roll-btn" class="btn-style">Roll Dice</button>
+                    </div>
                 </section>
-              
-
             </article>
         </main>
     </body>
