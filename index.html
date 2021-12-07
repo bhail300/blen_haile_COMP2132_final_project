@@ -1,12 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
     <head>
         <title>COMP 2132 Final Project</title>    
         <link href="styles/styles.css" rel="stylesheet" type="text/css">
+        <script src="scripts/jquery-3.4.1.min.js" defer="defer"></script>
+        <script src="scripts/scripts.js" defer="defer"></script>
     </head>
-    <body>
-        <main> 
-            <header>
+    <body> 
+        
+        <section id="rule-box">
+            <div id="game-rule">  
+               <h3>Game rules:</h3>     
+               <p></p>
+               <button id="close-rule">X</button>
+            </div>
+        </section>
+
+      <main> 
+           <header>
                 COMP 2132 Final Project
             </header>
 
@@ -17,14 +28,21 @@
                     <div><button id="rule-btn">Show rules</button></div>
                 </section>
 
-                <section id="game-box">
-                    
+                 <section id="game-box">
                     <div id="left" class="column">
                          <p>You</p>
+                         <figure>
+                             <img src="images/dice2.png" alt="dice-face-1" width="70" height="70">
+                             <img src="images/dice2.png" alt="dice-face-1" width="70" height="70">
+                         </figure>
                     </div>
 
                     <div id="right" class="column"> 
                         <p>Opponent</p>
+                        <figure>
+                            <img src="images/dice2.png" alt="dice-face-1" width="70" height="70">
+                            <img src="images/dice2.png" alt="dice-face-1" width="70" height="70">
+                        </figure>
                     </div>
                 </section>
                 
@@ -46,7 +64,9 @@
                         <button id="roll-btn" class="btn-style">Roll Dice</button>
                     </div>
                 </section>
+    
             </article>
         </main>
+
     </body>
 </html>
