@@ -1,3 +1,4 @@
+/*Document styling*/
 body {
   background-color: #239936;
   font-family: Arial, Helvetica, sans-serif;
@@ -31,14 +32,14 @@ h2 {
   font-weight: bold;
 }
 
-/*Dice container*/
+/*Game container*/
 #game-box {
   display: flex;
   flex-flow: row wrap;
 }
 
 .column {
-  flex: 1 1 200px;
+  flex: 1 1 300px;
   background-color: #184517;
   border-radius: 5px;
   font-size: 25px;
@@ -49,17 +50,17 @@ h2 {
 
 #left {
   display: flex;
-  text-align: left;
+  justify-content: center;
   height: 100px;
   background: #184517;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  margin-right: 300px;
+  margin-right: 100px;
 }
 
 #right {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   height: 100px;
   background: #184517;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -109,7 +110,7 @@ h2 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*Pop up css*/
+/*Rules pop-up*/
 #rule-box {
   background-color: rgba(25, 63, 33, 0.9);
   position: fixed;

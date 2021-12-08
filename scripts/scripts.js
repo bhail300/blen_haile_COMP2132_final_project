@@ -7,12 +7,12 @@ rule_box.style.display = "none";
 
 $(rule_btn).click(function(){
    setTimeout( function(){
-     $(rule_box).fadeIn(900);
+     $(rule_box).fadeIn(500);
     });  
 });
 
 $(close_rule).click(function(){
     setTimeout( function(){
-      $(rule_box).fadeOut(900);
+      $(rule_box).fadeOut(500);
      });  
  });
