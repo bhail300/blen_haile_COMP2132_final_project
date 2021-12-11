@@ -33,11 +33,16 @@ h2{
     font-weight: bold;
 }
 
+#rule-btn:hover{
+    background-color: black;
+    color: white;
+}
+
 
 /*Game container*/
 #game-box{
     display: flex;
-    flex-flow:row wrap; 
+    flex-flow:row wrap;
 }
 
 .column{
@@ -74,6 +79,7 @@ h2{
 #score-box{
     display: flex;
     flex-flow:row wrap;  
+    font-size: 20px;
 }  
 
 .position{
@@ -103,8 +109,18 @@ h2{
     margin-right: 30px;
 }
 
+#new-btn:hover{
+    background-color: black;
+    color: white;
+}
+
 #roll-btn{
     background-color: silver;
+}
+
+#roll-btn:hover{
+    background-color: black;
+    color: white;
 }
 
 .btn-style{
@@ -145,4 +161,9 @@ h2{
     right: 1px;
     top: 1px;
     pointer-events: auto;
+}
+
+#close-rule:hover{
+    background-color: black;
+    color: white;
 }
