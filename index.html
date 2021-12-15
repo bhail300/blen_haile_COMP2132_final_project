@@ -18,19 +18,22 @@
                         <ul>
                              <li>If either of the player's dice roll a value of 1 then the score for the player that round 
                              is 0. eg: if the player rolls a 6 and 1, they get a score of <strong>0</strong>.</li>
-                             <br>
+                             
                              <li>If the player rolls a pair of the same numbers then the player's score is the um of the two values multiplied by two. eg: if the player rolls 5 and 5, their score is calculated like this:<strong>(5+5)*2=20.</strong></li>
-                             <br>
+                             
                              <li>If the player rolls any other combination of dice other than the ones mentioned above
                              then the player's score is the total value of the two dice. eg: the player rolls a 3 and 2, the score would be calculated like this: <strong>3+2=5.</strong></li>
                         </ul>
-                        <button id="close-rule">X</button>
+                        <button id="close-rule">X</button> 
                    </div>
                 </section>
 
                 <section id="end-box">
                     <div id="end-info">  
-                         <h3>You Win/Lose/Draw!</h3>    
+                         <h3 id="end-message"></h3> 
+                         <figure>
+                            <img src="images/error.gif" alt="error gif" width="210" height="175" id="gif" >
+                         </figure>   
                          <button id="close-end">X</button>
                     </div>
                  </section>
@@ -38,6 +41,7 @@
             <header>
                 COMP 2132 Final Project
             </header>
+
             <article>
                 <section id="title-box">
                     <h2>Dice Game</h2>

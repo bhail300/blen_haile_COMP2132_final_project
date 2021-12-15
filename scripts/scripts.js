@@ -162,18 +162,24 @@ roll_btn.addEventListener('click', function(){
       $(document).ready(function(){
         setTimeout( function(){
           $(end_box).fadeIn(200);
+          end_message.innerHTML = `You Win!`;
+          document.getElementById("gif").src = "images/win.gif";
          });  
      }); 
     }else if(totalScoreForOpponent > totalScoreForPlayer){
       $(document).ready(function(){
         setTimeout( function(){
           $(end_box).fadeIn(200);
+          end_message.innerHTML = `Opponent Wins`;
+          document.getElementById("gif").src = "images/lose.gif";
          });  
      });
     }else if(totalScoreForPlayer == totalScoreForOpponent){
       $(document).ready(function(){
         setTimeout( function(){
           $(end_box).fadeIn(200);
+          end_message.innerHTML = `It's a Draw`;
+          document.getElementById("gif").src = "images/draw.gif";
          });  
      });
     }
@@ -189,8 +195,9 @@ new_btn.addEventListener('click', function(){
 
 
 /*END GAME POP-UP*/
-const end_box   = document.getElementById("end-box");
-const close_end = document.getElementById("close-end");
+const end_box     = document.getElementById("end-box");
+const close_end   = document.getElementById("close-end");
+const end_message = document.getElementById("end-message");
 
 end_box.style.display = "none";
 

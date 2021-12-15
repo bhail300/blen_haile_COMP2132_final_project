@@ -1,3 +1,18 @@
+/*Sass Mixins*/ 
+@mixin size {
+    width:100vw;
+    height:100vh;
+}
+
+@mixin space {
+    background: $base-color;
+    box-shadow: $shadow;
+    border-radius: $rad;
+    display: $box;
+    height: $px;
+    justify-content: center;
+}
+
 /*Sass variables*/
 $shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 $base-color:#184517;
@@ -67,22 +82,13 @@ h2{
 }
  
 #left{
-    display: $box;
-    justify-content: center;
-    height: $px;
-    background: $base-color;
-    box-shadow: $shadow;
-    border-radius: $rad;
+    @include space;
     margin-right: $px;
 }
  
 #right{
-    display: $box;
+    @include space;
     justify-content: center;
-    height: $px;
-    background: $base-color;
-    box-shadow: $shadow;
-    border-radius: $rad;
 }
 
 
@@ -99,12 +105,12 @@ h2{
 }
 
 #score1{
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 #score2{
     text-align: end;
-    margin-right: 50px;
+    margin-right: 20px;
 }  
 
 
@@ -145,10 +151,9 @@ h2{
 
 /*Rules pop-up*/
 #rule-box{
+    @include size;
     background-color: rgba(25, 63, 33, 0.9); 
     position:fixed;
-    width:100vw;
-    height:100vh;
     pointer-events: none;    
 	z-index:3;
 }
@@ -164,6 +169,10 @@ h2{
     transform: translate(-50%, -50%);
     padding: 10px;
     width: 300px;
+}
+
+#game-rule > ul > li{
+    margin: 10px ;
 }
 
 #close-rule{
@@ -184,9 +193,8 @@ h2{
 
 /*End Game pop-up*/
 #end-box{
+    @include size;
     position:fixed;
-    width:100vw;
-    height:100vh;
     pointer-events: none;    
 	z-index:3;
 }
@@ -205,7 +213,7 @@ h2{
 }
 
 #close-end{
-    background-color: red;
+    background-color: red; 
     border-radius: 40px;
     cursor: pointer;
     position: $set; 
@@ -217,4 +225,12 @@ h2{
 #close-end:hover{
     background-color: $bg;
     color: $text;
+}
+
+#end-message{
+    text-align: center;
+}
+
+#gif{
+    object-fit: auto;
 }

@@ -87,12 +87,12 @@ h2 {
 }
 
 #score1 {
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 #score2 {
   text-align: end;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 /*Game Controls*/
@@ -153,6 +153,10 @@ h2 {
   width: 300px;
 }
 
+#game-rule > ul > li {
+  margin: 10px;
+}
+
 #close-rule {
   background-color: red;
   border-radius: 40px;
@@ -203,4 +207,8 @@ h2 {
 #close-end:hover {
   background-color: black;
   color: white;
+}
+
+#end-message {
+  text-align: center;
 }
