@@ -1,4 +1,14 @@
-/*Document styling*/
+/*Sass variables*/
+$shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+$base-color:#184517;
+$px:100px;
+$text:white;
+$bg:black;
+$rad:5px;
+$box:flex;
+$set:absolute;
+
+/*Document styling*/ 
 body {
     background-color: #239936;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,85 +16,86 @@ body {
 }
 
 header{
-    display: flex;
-    background-color: #184517;
+    display: $box;
+    background-color: $base-color;
     justify-content: end;
     padding: 5px;
-    color: white;
+    color: $text;
 }
 
 
 /*title container*/
 #title-box{
-    display: flex;
+    display: $box;
     flex-direction: column;
     text-align: center;
 }
 
 h2{
     font-size: 60px;
-    color: white;
+    color: $text;
 }
 
 #rule-btn{
     background-color: red;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: $rad;
+    box-shadow: $shadow;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #rule-btn:hover{
-    background-color: black;
-    color: white;
+    background-color: $bg;
+    color: $text;
 }
 
 
 /*Game container*/
 #game-box{
-    display: flex;
+    display: $box;
     flex-flow:row wrap;
 }
 
 .column{
     flex:1 1 300px;
-    background-color: #184517; 
-    border-radius: 5px;
+    background-color: $base-color; 
+    border-radius: $rad;
     font-size: 25px;
     padding: 10px;
-    margin-top:100px;
-    color: white;
+    margin-top:$px;
+    color: $text;
 }
  
 #left{
-    display: flex;
+    display: $box;
     justify-content: center;
-    height: 100px;
-    background: #184517;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    margin-right: 100px;
+    height: $px;
+    background: $base-color;
+    box-shadow: $shadow;
+    border-radius: $rad;
+    margin-right: $px;
 }
  
 #right{
-    display: flex;
+    display: $box;
     justify-content: center;
-    height: 100px;
-    background: #184517;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+    height: $px;
+    background: $base-color;
+    box-shadow: $shadow;
+    border-radius: $rad;
 }
 
 
 /*Score container*/
 #score-box{
-    display: flex;
+    display: $box;
     flex-flow:row wrap;  
     font-size: 20px;
 }  
 
 .position{
     flex:1 1 200px; 
-    color: white;
+    color: $text;
 }
 
 #score1{
@@ -99,35 +110,37 @@ h2{
 
 /*Game Controls*/
 #game-btn{
-    display: flex;
+    display: $box;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: $px;
 }
 
 #new-btn{
     background-color: gold;
     margin-right: 30px;
+    cursor: pointer;
 }
 
 #new-btn:hover{
-    background-color: black;
-    color: white;
+    background-color: $bg;
+    color: $text;
 }
 
 #roll-btn{
     background-color: silver;
+    cursor: pointer;
 }
 
 #roll-btn:hover{
-    background-color: black;
-    color: white;
+    background-color: $bg;
+    color: $text;
 }
 
 .btn-style{
-    border-radius: 5px;
+    border-radius: $rad;
     padding: 5px;
     font-weight: bold;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: $shadow;
 }
 
 /*Rules pop-up*/
@@ -141,11 +154,11 @@ h2{
 }
 
 #game-rule{
-    background-color: whitesmoke;
-    color: black;
-    border: 5px solid black;
-    border-radius: 5px;
-    position: absolute;
+    background-color: $text;
+    color: $bg;
+    border: 5px solid $bg;
+    border-radius: $rad;
+    position: $set;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -157,13 +170,51 @@ h2{
     background-color: red;
     border-radius: 40px;
     cursor: pointer;
-    position: absolute; 
+    position: $set; 
     right: 1px;
     top: 1px;
     pointer-events: auto;
 }
 
 #close-rule:hover{
-    background-color: black;
-    color: white;
+    background-color: $bg;
+    color: $text;
+}
+
+
+/*End Game pop-up*/
+#end-box{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    pointer-events: none;    
+	z-index:3;
+}
+
+#end-info{
+    background-color: $text;
+    color: $bg;
+    border: 5px solid $bg;
+    border-radius: $rad;
+    position: $set;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 300px;
+}
+
+#close-end{
+    background-color: red;
+    border-radius: 40px;
+    cursor: pointer;
+    position: $set; 
+    right: 1px;
+    top: 1px;
+    pointer-events: auto;
+}
+
+#close-end:hover{
+    background-color: $bg;
+    color: $text;
 }
