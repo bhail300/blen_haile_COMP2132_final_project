@@ -5,7 +5,7 @@
 }
 
 @mixin space {
-    background: $base-color;
+    background: $base-color; 
     box-shadow: $shadow;
     border-radius: $rad;
     display: $box;
@@ -195,6 +195,7 @@ h2{
 #end-box{
     @include size;
     position:fixed;
+    background-color: rgba(25, 63, 33, 0.9);
     pointer-events: none;    
 	z-index:3;
 }

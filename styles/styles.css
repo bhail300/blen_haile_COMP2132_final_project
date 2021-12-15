@@ -1,3 +1,4 @@
+/*Sass Mixins*/
 /*Sass variables*/
 /*Document styling*/
 body {
@@ -56,22 +57,23 @@ h2 {
 }
 
 #left {
-  display: flex;
-  justify-content: center;
-  height: 100px;
   background: #184517;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+  display: flex;
+  height: 100px;
+  justify-content: center;
   margin-right: 100px;
 }
 
 #right {
-  display: flex;
-  justify-content: center;
-  height: 100px;
   background: #184517;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  justify-content: center;
 }
 
 /*Score container*/
@@ -132,10 +134,10 @@ h2 {
 
 /*Rules pop-up*/
 #rule-box {
-  background-color: rgba(25, 63, 33, 0.9);
-  position: fixed;
   width: 100vw;
   height: 100vh;
+  background-color: rgba(25, 63, 33, 0.9);
+  position: fixed;
   pointer-events: none;
   z-index: 3;
 }
@@ -174,9 +176,10 @@ h2 {
 
 /*End Game pop-up*/
 #end-box {
-  position: fixed;
   width: 100vw;
   height: 100vh;
+  position: fixed;
+  background-color: rgba(25, 63, 33, 0.9);
   pointer-events: none;
   z-index: 3;
 }
@@ -211,4 +214,9 @@ h2 {
 
 #end-message {
   text-align: center;
+}
+
+#gif {
+  -o-object-fit: auto;
+     object-fit: auto;
 }
